@@ -13,10 +13,7 @@ RegisterNUICallback("exit", function(data)
     SetDisplay(false)
 end)
 
---very important cb 
-RegisterNUICallback("exit", function(data)
-    SetDisplay(false)
-end)
+
 
 function SetDisplay(bool)
     display = bool
