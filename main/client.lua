@@ -36,7 +36,6 @@ Citizen.CreateThread(function()
             local DistanceBlackMarket = #(PlayerCoord - Config.BlackMarket[i].NPC)
             if DistanceBlackMarket < 3.0 then
                 Sleep = 2
-                DrawText3D(Config.BlackMarket[i].NPC.x, Config.BlackMarket[i].NPC.y, Config.BlackMarket[i].NPC.z + 2.0, '~r~E~w~ - '..Config.BlackMarket[i].Satici)
                 if IsControlJustPressed(0, 38) then
                     ESX.TriggerServerCallback('server:BlackMarket:server:PoliceSayi', function(count)
                         if count >= Config.BlackMarket[i].Police then
