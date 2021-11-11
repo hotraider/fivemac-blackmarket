@@ -33,6 +33,7 @@ Citizen.CreateThread(function()
             local DistanceBlackMarket = #(PlayerCoord - Config.BlackMarket[i].NPC)
             if DistanceBlackMarket < 3.0 then
                 Sleep = 2
+               DrawText3D(Config.BlackMarket[i].NPC.x, Config.BlackMarket[i].NPC.y, Config.BlackMarket[i].NPC.z + 2.0, '~r~E~w~ - '..Config.BlackMarket[i].Satici)
                 if IsControlJustPressed(0, 38) then
                     ESX.TriggerServerCallback('server:BlackMarket:server:PoliceSayi', function(count)
                         if count >= Config.BlackMarket[i].Police then
@@ -107,3 +108,18 @@ Citizen.CreateThread(function()
     FreezeEntityPosition(npc, true)
     end
 end)
+
+DrawText3D = function(x,y,z,text)
+    SetTextScale(0.35, 0.35)
+    SetTextFont(4)
+    SetTextProportional(1)
+    SetTextColour(255, 255, 255, 215)
+    SetTextEntry("STRING")
+    SetTextCentre(true)
+    AddTextComponentString(text)
+    SetDrawOrigin(x,y,z, 0)
+    DrawText(0.0, 0.0)
+    local factor = (string.len(text)) / 370
+    DrawRect(0.0, 0.0+0.0125, 0.017+ factor, 0.03, 0, 0, 0, 75)
+    ClearDrawOrigin()
+  end
