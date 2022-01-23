@@ -36,7 +36,7 @@ AddEventHandler("fraider:esya1", function()
     if (Player.getMoney() >= fivemac[2]) then
     Player.removeMoney(fivemac[2])
     Player.addInventoryItem(fivemac[1], 1)
-    TriggerClientEvent('okokNotify:Alert', src, "Başarılı", 'Aldığın Ürün: '..fivemac[1]..'\nAlınan Fiyat: 5000$', 6000, 'success')
+    TriggerClientEvent('okokNotify:Alert', src, "Başarılı", 'Aldığın Ürün: '..fivemac[1]..'\nAlınan Fiyat: '..tostring(fivemac[2])..'$', 6000, 'success')
     else
     TriggerClientEvent('okokNotify:Alert', src, "Başarısız", 'Bu ürünü almak için paran yetersiz! İndirim yok! gereken miktar 5000$', 6000, 'error')
     end
@@ -50,7 +50,7 @@ AddEventHandler("fraider:esya2", function()
     if (Player.getMoney() >= fivemac[6]) then
     Player.removeMoney(fivemac[6])
     Player.addInventoryItem(fivemac[5], 1)
-    TriggerClientEvent('okokNotify:Alert', src, "Başarılı", 'Aldığın Ürün: '..fivemac[5]..'\nAlınan Fiyat: 5000$', 6000, 'success')
+    TriggerClientEvent('okokNotify:Alert', src, "Başarılı", 'Aldığın Ürün: '..fivemac[5]..'\nAlınan Fiyat: '..tostring(fivemac[6])..'$', 6000, 'success')
     else
     TriggerClientEvent('okokNotify:Alert', src, "Başarısız", 'Bu ürünü almak için paran yetersiz! İndirim yok! gereken miktar 5000$', 6000, 'error')
     end
@@ -65,7 +65,7 @@ AddEventHandler("fraider:esya3", function()
     if (Player.getMoney() >= fivemac[10]) then
     Player.removeMoney(fivemac[10])
     Player.addInventoryItem(fivemac[9], 1)
-    TriggerClientEvent('okokNotify:Alert', src, "Başarılı", 'Aldığın Ürün: '..fivemac[9]..'\nAlınan Fiyat: 5000$', 6000, 'success')
+    TriggerClientEvent('okokNotify:Alert', src, "Başarılı", 'Aldığın Ürün: '..fivemac[9]..'\nAlınan Fiyat: '..tostring(fivemac[10])..'$', 6000, 'success')
     else
     TriggerClientEvent('okokNotify:Alert', src, "Başarısız", 'Bu ürünü almak için paran yetersiz! İndirim yok! gereken miktar 5000$', 6000, 'error')
     end
@@ -80,7 +80,7 @@ AddEventHandler("fraider:esya4", function()
     if (Player.getMoney() >= fivemac[8]) then
     Player.removeMoney(fivemac[8])
     Player.addInventoryItem(fivemac[7], 1)
-    TriggerClientEvent('okokNotify:Alert', src, "Başarılı", 'Aldığın Ürün: '..fivemac[7]..'\nAlınan Fiyat: 5000$', 6000, 'success')
+    TriggerClientEvent('okokNotify:Alert', src, "Başarılı", 'Aldığın Ürün: '..fivemac[7]..'\nAlınan Fiyat: '..tostring(fivemac[8])..'$', 6000, 'success')
     else
     TriggerClientEvent('okokNotify:Alert', src, "Başarısız", 'Bu ürünü almak için paran yetersiz! İndirim yok! gereken miktar 5000$', 6000, 'error')
     end
@@ -94,7 +94,7 @@ AddEventHandler("fraider:esya5", function()
     if (Player.getMoney() >= fivemac[4]) then
     Player.removeMoney(fivemac[4])
     Player.addInventoryItem(fivemac[3], 1)
-    TriggerClientEvent('okokNotify:Alert', src, "Başarılı", 'Aldığın Ürün: '..fivemac[3]..' \nAlınan Fiyat: 50000$', 6000, 'success')
+    TriggerClientEvent('okokNotify:Alert', src, "Başarılı", 'Aldığın Ürün: '..fivemac[3]..'\nAlınan Fiyat: '..tostring(fivemac[4])..'$', 6000, 'success')
     else
     TriggerClientEvent('okokNotify:Alert', src, "Başarısız", 'Bu ürünü almak için paran yetersiz! İndirim yok! gereken miktar 5000$', 6000, 'error')
     end
@@ -107,7 +107,7 @@ AddEventHandler("fraider:esya6", function()
     if (Player.getMoney() >= fivemac[12]) then
     Player.removeMoney(fivemac[12])
     Player.addInventoryItem(fivemac[11], 1)
-    TriggerClientEvent('okokNotify:Alert', src, "Başarılı", 'Aldığın Ürün: '..fivemac[11]..' \nAlınan Fiyat: 50000$', 6000, 'success')
+    TriggerClientEvent('okokNotify:Alert', src, "Başarılı", 'Aldığın Ürün: '..fivemac[11]..'\nAlınan Fiyat: '..tostring(fivemac[12])..'$', 6000, 'success')
     else
     TriggerClientEvent('okokNotify:Alert', src, "Başarısız", 'Bu ürünü almak için paran yetersiz! İndirim yok! gereken miktar 5000$', 6000, 'error')
     end
@@ -120,7 +120,7 @@ AddEventHandler("fraider:esya7", function()
     if (Player.getMoney() >= fivemac[14]) then
     Player.removeMoney(fivemac[14])
     Player.addInventoryItem(fivemac[13], 1)
-    TriggerClientEvent('okokNotify:Alert', src, "Başarılı", 'Aldığın Ürün: '..fivemac[13]..' \nAlınan Fiyat: 50000$', 6000, 'success')
+    TriggerClientEvent('okokNotify:Alert', src, "Başarılı", 'Aldığın Ürün: '..fivemac[13]..'\nAlınan Fiyat: '..tostring(fivemac[14])..'$', 6000, 'success')
     else
     TriggerClientEvent('okokNotify:Alert', src, "Başarısız", 'Bu ürünü almak için paran yetersiz! İndirim yok! gereken miktar 5000$', 6000, 'error')
     end
